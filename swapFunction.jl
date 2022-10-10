@@ -1,4 +1,4 @@
-function makeSwapgate(sites::Vector{<:Index}, i1,i2)
+function makeSwapgate(sites, i1,i2)
     #A swap gate that will swap site with index i1 with site with index i2
     s1 = sites[i1] #defining site with index i1
     s2 = sites[i2] #defining site with index i2
