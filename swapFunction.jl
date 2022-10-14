@@ -30,7 +30,7 @@ function swapSequence(sites::Vector{<:Index}, ind_1, ind_2)
             ind_1 = ind_2
         end
         for i in ind_1:(num_swap+ind_1) - 1
-            U = swapgate(sites, i, i+1)
+            U = makeSwapgate(sites, i, i+1)
             push!(gate, U)
         end
     end
