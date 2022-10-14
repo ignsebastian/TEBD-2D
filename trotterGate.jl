@@ -65,7 +65,7 @@ function trotterGate(s,lattice,Ny,tau)
                 h2 = ITensor[]
                 if (Ny-1) in diff
                     for pair in pairs[2]
-                        U = swapsequence(s,pair[1],pair[2])
+                        U = swapSequence(s,pair[1],pair[2])
                         s1 = s[pair[1]+(Ny-1-1)]
                         s2 = s[pair[2]]
                         hj = hamiltonianGate(s1,s2)
@@ -84,7 +84,7 @@ function trotterGate(s,lattice,Ny,tau)
             h2 = ITensor[]
             used_pair = []
             for pair in pairs[3]
-                U = swapsequence(s,pair[1],pair[2])
+                U = swapSequence(s,pair[1],pair[2])
                 s1 = s[pair[1]+(Ny-1)]
                 s2 = s[pair[2]]
                 hj = hamiltonianGate(s1,s2)
@@ -112,7 +112,7 @@ function trotterGate(s,lattice,Ny,tau)
             h2 = ITensor[]
             used_pair = []
             for pair in pairs[4]
-                U = swapsequence(s,pair[1],pair[2])
+                U = swapSequence(s,pair[1],pair[2])
                 s1 = s[pair[1]+(Ny)]
                 s2 = s[pair[2]]
                 hj = hamiltonianGate(s1,s2)
@@ -140,7 +140,7 @@ function trotterGate(s,lattice,Ny,tau)
             h2 = ITensor[]
             used_pair = []
             for pair in pairs[5]
-                U = swapsequence(s,pair[1],pair[2])
+                U = swapSequence(s,pair[1],pair[2])
                 s1 = s[pair[1]+(2*Ny-2)]
                 s2 = s[pair[2]]
                 hj = hamiltonianGate(s1,s2)
