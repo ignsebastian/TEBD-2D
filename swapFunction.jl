@@ -13,7 +13,7 @@ function makeSwapgate(sites, i1,i2)
     return gate
 end
 
-function swapSequence(sites::Vector{<:Index}, ind_1, ind_2)
+function swapSequence(sites, ind_1, ind_2)
     #= Producing swap gate(s) to make sure that site with index ind_1 will be right next to site with index ind_2
     The swap will be conducted on every sites, one by one
     e.g to produce swap index between 1 and 5, this function will produce a sequence of swap gate as below:
