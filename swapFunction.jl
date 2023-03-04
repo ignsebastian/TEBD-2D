@@ -1,5 +1,6 @@
 function makeSwapgate(sites, i1,i2)
     #A swap gate that will swap site with index i1 with site with index i2
+    #This is a translation from the cpp version of swap gate in ITensor
     s1 = sites[i1] #defining site with index i1
     s2 = sites[i2] #defining site with index i2
     a = ITensor(dag(s1),prime(s2))
